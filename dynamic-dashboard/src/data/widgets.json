@@ -1,0 +1,26 @@
+{
+    "categories": [
+      {
+        "name": "CSPM Executive Dashboard",
+        "widgets": [
+          {"id": "1", "name": "Security Overview", "text": "Summary of security risks and compliance."},
+          {"id": "2", "name": "Compliance Status", "text": "Current compliance status across the cloud environment."}
+        ]
+      },
+      {
+        "name": "CWPP Dashboard",
+        "widgets": [
+          {"id": "3", "name": "Workload Protection", "text": "Protection status of workloads across environments."},
+          {"id": "4", "name": "Threat Detection", "text": "Detection of threats in real-time across workloads."}
+        ]
+      },
+      {
+        "name": "Registry Scan",
+        "widgets": [
+          {"id": "5", "name": "Image Vulnerabilities", "text": "Scanned image vulnerabilities in container registries."},
+          {"id": "6", "name": "Compliance Checks", "text": "Registry compliance checks and policy adherence."}
+        ]
+      }
+    ]
+  }
+  
