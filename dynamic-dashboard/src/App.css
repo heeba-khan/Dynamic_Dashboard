@@ -1,42 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  background-color: rgb(197, 255, 255);
+  width: 100wh;
+  height: 100%;
+}
+
+.dashboard{
+  padding: 2px;
+}
+
+.header{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  height: 80px;
+}
+
+.dash-heading{
+  font-size: 24px;
+}
+
+.search-bar{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.widget{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid gray;
+  /* display: flex; */
+  padding: 10px 20px;
+  gap: 20px;
+  /* flex-direction: column; */
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.widget h3{
+
+}
+
+.widget p{
   text-align: center;
+  margin: 60px 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.widget button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addwidget{
+  width: 500px;
+  height: 300px;
+  border: 2px solid gray;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.addwidget button{
+  /* position: relative; */
+  top:140px;
+  right: 180px;
+  padding: 5px;
+  height: 40px;
+  width: 100px;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.addwidget button:hover{
+  background-color: rgb(240, 238, 238);
+}
+.cat-container{
+  /* border: 2px solid brown; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px;
+}
+.category{
+  /* background-color: greenyellow; */
+  display: flex;
+  gap: 50px;
+  /* border: 2px solid red; */
+  /* flex-direction: column; */
+  padding: 10px 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.cat-heading{
+  font-size: 20px;
+  margin-left: 20px;
 }
+
