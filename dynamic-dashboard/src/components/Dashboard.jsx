@@ -1,8 +1,10 @@
 // src/components/Dashboard.jsx
-import React from 'react';
+
+import React,{useState} from 'react';
 import { useSelector } from 'react-redux';
 import Category from './category/Category';
 import SearchBar from './SearchBar';
+
 
 const Dashboard = () => {
   const categories = useSelector((state) => state.categories);
@@ -23,11 +25,12 @@ const filterCategories = categories.map((category) => {
   };
 });
 
+
   return (
     <div className='dashboard'>
         <div className="header">
             <h1 className='dash-heading'>Dynamic Dashboard</h1>
-            <SearchBar />
+                <SearchBar />
         </div>
       {filterCategories.map((category) => (
         <Category key={category.id} category={category} />

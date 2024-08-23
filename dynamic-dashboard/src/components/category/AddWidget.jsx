@@ -1,4 +1,4 @@
-// src/components/AddWidgetForm.jsx
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addWidget } from '../../redux/actions';
@@ -6,21 +6,21 @@ import { addWidget } from '../../redux/actions';
 const AddWidgetForm = ({ categoryId }) => {
   const [widgetName, setWidgetName] = useState('');
   const [widgetText, setWidgetText] = useState('');
-  const [isFormVisible, setIsFormVisible] = useState(false); // State to manage form visibility
+  const [isFormVisible, setIsFormVisible] = useState(false);
   const dispatch = useDispatch();
 
   const handleAddWidget = (e) => {
     e.preventDefault();
     if (widgetName && widgetText) {
       const newWidget = {
-        id: Date.now().toString(), // Generate a unique ID
+        id: Date.now().toString(), 
         name: widgetName,
         text: widgetText,
       };
       dispatch(addWidget(categoryId, newWidget));
       setWidgetName('');
       setWidgetText('');
-      setIsFormVisible(false); // Hide the form after adding the widget
+      setIsFormVisible(false); 
     }
   };
 
